@@ -1,0 +1,550 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== CORPO ===== */
+body {
+  background-color: #FF0000; /* vermelho de fundo */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== FAIXA SUPERIOR ===== */
+.top-bar {
+  background-color: #2C2C2C;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #FF0000;
+  font-size: 1.2em;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.top-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.top-link a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CONTAINER DE LOGIN ===== */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: #2C2C2C;
+  color: white;
+  padding: 40px 50px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  width: 320px;
+}
+
+.login-logo {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1em;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FF0000;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #cc0000;
+}
+
+/* ===== LINKS INFERIORES ===== */
+.login-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+.login-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+/* ===== FORMULÁRIO DE CADASTRO ===== */
+.form-container {
+  background-color: #2C2C2C;
+  color: white;
+  padding: 40px 50px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  width: 360px;
+  margin: 50px auto;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  font-size: 0.9em;
+  color: #dcdcdc;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  outline: none;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-row div {
+  flex: 1;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FF0000;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #cc0000;
+}
+
+
+/* ======== PÁGINA INICIAL ======== */
+body {
+  background-color: #FF0000;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* ===== HEADER ===== */
+.top-bar {
+  background-color: #2C2C2C;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.top-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+.top-links a:hover {
+  color: #FF0000;
+}
+
+.promo-text {
+  text-align: center;
+  background-color: #FF0000;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.main-menu {
+  background-color: #FF0000;
+  text-align: center;
+}
+
+.main-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.main-menu a:hover {
+  color: #2C2C2C;
+}
+
+/* ===== BANNER ===== */
+.banner {
+  background-color: #2C2C2C;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.banner h1 {
+  margin-bottom: 20px;
+}
+
+.banner button {
+  background: linear-gradient(to right, #FF0000, #fff);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: #2C2C2C;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== BENEFÍCIOS ===== */
+.benefits {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  padding: 20px;
+  background-color: #FF0000;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.benefit-item {
+  flex: 1;
+  min-width: 180px;
+}
+
+/* ===== PRODUTOS ===== */
+.mais-vendidos, .lancamentos {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.produtos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.produto-card {
+  background-color: #2C2C2C;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.produto-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.produto-card button {
+  background-color: #FF0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 0;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.produto-card button:hover {
+  background-color: #cc0000;
+}
+
+/* ===== LANÇAMENTOS ===== */
+.ver-todos {
+  background-color: #2C2C2C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.ver-todos:hover {
+  background-color: #FF0000;
+}
+
+/* ===== BANNER FINAL ===== */
+.banner-final {
+  background-color: #2C2C2C;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.banner-final button {
+  background-color: #FF0000;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.banner-final button:hover {
+  background-color: #cc0000;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #2C2C2C;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-content input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer-content button {
+  background-color: #FF0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+/* ===== ESTILOS EXCLUSIVOS DA HOME ===== */
+body.home-page {
+  background-color: #FF0000;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+.home-page .top-bar {
+  background-color: #2C2C2C;
+  color: white;
+}
+
+.home-page .promo-text {
+  background-color: #FF0000;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.home-page .main-menu {
+  background-color: #FF0000;
+  text-align: center;
+}
+
+.home-page .main-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+.home-page .main-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.home-page .main-menu a:hover {
+  color: #2C2C2C;
+}
+
+/* BANNER */
+.home-page .banner {
+  background-color: #2C2C2C;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.home-page .banner button {
+  background: linear-gradient(to right, #FF0000, #fff);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: #2C2C2C;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* BENEFÍCIOS */
+.home-page .benefits {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+
+/* PRODUTOS */
+.home-page .produtos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.home-page .produto-card {
+  background-color: #2C2C2C;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.home-page .produto-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* BOTÕES */
+.home-page .produto-card button,
+.home-page .banner-final button,
+.home-page .ver-todos,
+.home-page footer button {
+  background-color: #FF0000;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.home-page .produto-card button:hover,
+.home-page .banner-final button:hover,
+.home-page .ver-todos:hover,
+.home-page footer button:hover {
+  background-color: #cc0000;
+}
+
+/* BANNER FINAL */
+.home-page .banner-final {
+  background-color: #2C2C2C;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+/* FOOTER */
+.home-page footer {
+  background-color: #2C2C2C;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.home-page .footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.home-page .footer-content input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+

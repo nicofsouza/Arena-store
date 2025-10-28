@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arena Store - Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- TOPO -->
+  <header class="top-bar">
+    <div class="logo">
+      <img src="logo.png" alt="Arena Store Logo">
+      <span>ARENA<br>STORE</span>
+    </div>
+    <nav class="top-link">
+      <a href="Pagina_inicial.html">Home</a>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main>
+    <div class="form-container">
+      <h2>Cadastro</h2>
+      <form>
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" placeholder="Ex: Bárbara Silva" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seu@gmail.com" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" placeholder="(11) 1413-3250" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Digite sua senha" required>
+
+        <div class="input-row">
+          <div>
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" placeholder="00000-000" required>
+          </div>
+          <div>
+            <label for="logradouro">Logradouro</label>
+            <input type="text" id="logradouro" placeholder="Rua Exemplo" required>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div>
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" placeholder="Centro" required>
+          </div>
+          <div>
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" placeholder="São Paulo" required>
+          </div>
+        </div>
+
+        <label for="estado">Estado</label>
+        <input type="text" id="estado" placeholder="SP" required>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
