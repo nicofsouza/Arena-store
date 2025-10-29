@@ -1,130 +1,141 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arena Store - Página Inicial</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Store - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-
-<body class="home-page">
-  <!-- TOPO -->
-  <header class="top-bar">
-    <div class="header-top">
-      <div class="logo">
-        <img src="img/logo.png" alt="Arena Store Logo">
-        <span>Arena<br>Store</span>
-      </div>
-      <div class="top-links">
-        <a href="login.html">Login</a>
-        <a href="sobre.html">Sobre</a>
-      </div>
+    <!-- Cabeçalho -->
+    <header>
+    <div class="logo">
+        <img src="logo.png" alt="Arena Store Logo">
+        <h1 class="site-title">ARENA STORE</h1>
     </div>
 
-    <div class="promo-text">
-      Durante essa semana estamos com 40% de desconto e frete grátis por toda capital!
-    </div>
-
-    <nav class="main-menu">
-      <ul>
-        <li><a href="#">Futebol</a></li>
-        <li><a href="#">Basquete</a></li>
-        <li><a href="#">Vôlei</a></li>
-        <li><a href="#">Acessórios</a></li>
-        <li><a href="#">Todos os produtos</a></li>
-      </ul>
+    <nav>
+        <ul>
+            <li><a href="futebol.html">Futebol</a></li>
+            <li><a href="basquete.html">Basquete</a></li>
+            <li><a href="volei.html">Vôlei</a></li>
+            <li><a href="acessorios.html">Acessórios</a></li>
+            <li><a href="todosprodutos.html">Produtos</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <!-- BANNER PRINCIPAL -->
-  <section class="banner">
-    <h1>Bem-Vindo(a) ao Mundo Esportivo</h1>
-    <button>Explorar Catálogo</button>
-  </section>
+    <div class="header-right">
+        <a href="login.html">Login</a>
+        <a href="">Sobre</a>
+    </div>
+</header>
 
-  <!-- BENEFÍCIOS -->
-  <section class="benefits">
-    <div class="benefit-item">
-      🚚 <b>Frete Grátis</b><br>Em compras acima de R$199
-    </div>
-    <div class="benefit-item">
-      💳 <b>Pagamento Seguro</b><br>Com as principais bandeiras
-    </div>
-    <div class="benefit-item">
-      ☎️ <b>Atendimento</b><br>Suporte em horário comercial
-    </div>
-    <div class="benefit-item">
-      🔄 <b>Trocas e Devoluções</b><br>Fácil e rápido
-    </div>
-  </section>
 
-  <!-- MAIS VENDIDOS -->
-  <section class="mais-vendidos">
-    <h2>As Mais Vendidas!</h2>
-    <div class="produtos">
-      <div class="produto-card">
-        <img src="img/prod1.jpg" alt="Camisa 1">
-        <h3>Camisa Oficial</h3>
-        <p>R$ 199,90</p>
-        <button>Comprar</button>
-      </div>
-      <div class="produto-card">
-        <img src="img/prod2.jpg" alt="Camisa 2">
-        <h3>Camisa Seleção</h3>
-        <p>R$ 179,90</p>
-        <button>Comprar</button>
-      </div>
-      <div class="produto-card">
-        <img src="img/prod3.jpg" alt="Camisa 3">
-        <h3>Camisa Retrô</h3>
-        <p>R$ 149,90</p>
-        <button>Comprar</button>
-      </div>
-    </div>
-  </section>
+    <!-- Banner Principal -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Bem-Vindo(a) ao Mundo Esportivo</h1>
+            <a href="todosprodutos.html" class="botao">Explorar Coleção</a>
+        </div>
+    </section>
 
-  <!-- LANÇAMENTOS -->
-  <section class="lancamentos">
-    <h2>Lançamentos</h2>
-    <div class="produtos">
-      <div class="produto-card">
-        <img src="img/prod4.jpg" alt="Lançamento 1">
-        <h3>Nova Linha</h3>
-        <p>R$ 189,90</p>
-        <button>Comprar</button>
-      </div>
-      <div class="produto-card">
-        <img src="img/prod5.jpg" alt="Lançamento 2">
-        <h3>Coleção Premium</h3>
-        <p>R$ 209,90</p>
-        <button>Comprar</button>
-      </div>
-      <div class="produto-card">
-        <img src="img/prod6.jpg" alt="Lançamento 3">
-        <h3>Edição Limitada</h3>
-        <p>R$ 239,90</p>
-        <button>Comprar</button>
-      </div>
-    </div>
-    <button class="ver-todos">Ver Todos os Produtos</button>
-  </section>
+    <!-- Benefícios -->
+    <section class="beneficios">
+        <div class="beneficio">
+            <h3>🚚 Frete Grátis</h3>
+            <p>para toda Capital</p>
+        </div>
+        <div class="beneficio">
+            <h3>🏷️ Cupom</h3>
+            <p>Use “ARENA10” e ganhe 10% de desconto</p>
+        </div>
+        <div class="beneficio">
+            <h3>💬 Atendimento</h3>
+            <p>Em caso de dúvidas, entre em contato via Instagram</p>
+        </div>
+        <div class="beneficio">
+            <h3>🔁 Trocas e Devoluções</h3>
+            <p>Trocas e devoluções entre em contato via e-mail</p>
+        </div>
+    </section>
 
-  <!-- BANNER FINAL -->
-  <section class="banner-final">
-    <h2>O MANTO VIROU PATRIMÔNIO</h2>
-    <p>Chegou a nova camisa da seleção — feita com tecnologia e paixão!</p>
-    <button>Garanta o seu</button>
-  </section>
+    <!-- Produtos Mais Vendidos -->
+    <section id="colecao" class="produtos">
+        <h2>As Mais Vendidas!</h2>
+        <div class="linha-produtos">
+            <div class="card">
+                <img src="imagens acessorios/10 (1).png" alt="Produto 1">
+                <p>R$215,00</p>
+                <small>3x de R$85,00 sem juros</small>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="imagens camisar/brasil (1).png" alt="Produto 2">
+                <p>R$252,00</p>
+                <small>3x de R$85,00 sem juros</small>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="imagens chuteiras/3 (1).png" alt="Produto 3">
+                <p>R$252,00</p>
+                <small>3x de R$85,00 sem juros</small>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-content">
-      <input type="text" placeholder="Seu nome">
-      <input type="email" placeholder="Seu e-mail">
-      <button>Enviar</button>
-    </div>
-    <p>© 2025 Arena Store - Todos os direitos reservados</p>
-  </footer>
+    <!-- Lançamentos -->
+    <section class="lancamentos">
+        <h2>Lançamentos</h2>
+        <div class="linha-produtos">
+            <div class="card">
+                <img src="imagens camisar/4.png" alt="Produto 4">
+            </div>
+            <div class="card">
+                <img src="imagens camisar/3.png" alt="Produto 5">
+            </div>
+            <div class="card">
+                <img src="imagens camisar/1.png" alt="Produto 6">
+            </div>
+        </div>
+        <a href="todos_produtos.html" class="botao">Ver Todos os Produtos</a>
+    </section>
+
+    <!-- Banner do Flamengo -->
+    <section class="banner-flamengo">
+        <div class="texto-banner">
+            <h2>O MANTO VIROU PATRIMÔNIO</h2>
+            <p>Chegou a nova camisa 3 do Flamengo. A história da Nação estampada no peito.</p>
+            <a href="" class="botao-branco">Garanta o seu</a>
+        </div>
+    </section>
+
+    <!-- Sobre a Arena Store -->
+    <section class="sobre">
+        <div class="texto-sobre">
+            <h2><span class="destaque">Arena Store</span></h2>
+            <p>É um e-commerce multiesportivo especializado na comercialização de uma vasta gama de produtos oficiais de diversas modalidades. Nosso foco principal reside em atender à demanda de fãs e praticantes de esportes, oferecendo itens autênticos e de alta qualidade.</p>
+            <p>Ao se posicionar como uma multiesportiva, a Arena Store atende a um público diversificado, desde o torcedor fanático que quer a nova camisa do time até o atleta amador em busca de equipamentos específicos para seu treino.</p>
+        </div>
+        <div class="imagem-sobre">
+            <img src="logo.png" alt="Arena Store">
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <img src="logo.png" alt="Arena Store">
+            </div>
+            <form class="newsletter">
+                <input type="text" placeholder="Nome Completo">
+                <input type="email" placeholder="E-mail">
+            </form>
+            <p class="inicio"><a href="Pagina_inicial.html">Início</a></p>
+        </div>
+    </footer>
+
 </body>
 </html>
