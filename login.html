@@ -24,9 +24,9 @@
         <div class="login-box">
             <img src="logo.png" alt="Arena Store Logo" class="login-logo">
             <h2>Login</h2>
-            <form>
-                <input type="text" placeholder="Nome de Usuário" required>
-                <input type="password" placeholder="Senha" required>
+            <form id="loginForm">
+                <input type="text" id="usuario" placeholder="E-mail" required>
+                <input type="password" id="senha" placeholder="Senha" required>
                 <button type="submit">Entrar</button>
             </form>
             <div class="links">
@@ -35,6 +35,35 @@
             </div>
         </div>
     </main>
+
+    <!-- SCRIPT -->
+    <script>
+      const form = document.getElementById('loginForm');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const email = document.getElementById('usuario').value;
+        const senha = document.getElementById('senha').value;
+
+        const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+        // Verifica se existe um usuário com o mesmo email e senha
+        const usuarioEncontrado = usuarios.find(
+          (user) => user.email === email && user.senha === senha
+        );
+
+        if (usuarioEncontrado) {
+          alert(`Bem-vindo(a), ${usuarioEncontrado.nome}!`);
+          // Aqui você pode redirecionar, se quiser:
+          window.location.href = "Pagina_inicial.html";
+        } else {
+          alert("E-mail ou senha incorretos. Tente novamente!");
+        }
+      });
+    </script>
+    <p id="mensagem"></p>
+<script src="login.js"></script>
 
 </body>
 </html>

@@ -5,7 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arena Store - Trocar Senha</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* === ESTILO DOS POPUPS === */
+    .popup-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 9999;
+    }
+
+    .popup-overlay.show {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      background: #fff;
+      color: #222;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-20px);
+      animation: slideDown 0.4s ease forwards;
+    }
+
+    @keyframes slideDown {
+      to { transform: translateY(0); }
+    }
+
+    .popup h3 {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      color: #111;
+    }
+
+    .popup p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .popup button {
+      background: linear-gradient(90deg, #00a859, #008b4e);
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .popup button:hover {
+      background: linear-gradient(90deg, #00b65d, #00a859);
+      transform: scale(1.05);
+    }
+  </style>
 </head>
+
 <body>
   <header class="topbar">
     <div class="logo">
@@ -20,17 +88,72 @@
   <main class="login-container">
     <div class="login-box">
       <img src="logo.png" alt="Arena Store Logo" class="login-logo">
-      <h2>Trocar senha</h2>
-      <form>
-        <input type="password" placeholder="Nome do Usuário" required>
-        <input type="password" placeholder="Nova senha" required>
+      <h2>Trocar Senha</h2>
+
+      <form id="trocarSenhaForm">
+        <input type="text" id="usuario" placeholder="E-mail cadastrado" required>
+        <input type="password" id="novaSenha" placeholder="Nova senha" required>
         <button type="submit">Salvar</button>
       </form>
+
       <div class="links">
         <a href="login.html">Voltar para o Login</a>
-        
       </div>
     </div>
   </main>
+
+  <!-- POPUP DE ALERTA -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup" id="popupBox">
+      <h3 id="popupTitle">Título</h3>
+      <p id="popupMessage">Mensagem</p>
+      <button onclick="fecharPopup()">OK</button>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    const form = document.getElementById('trocarSenhaForm');
+    const popup = document.getElementById('popup');
+    const popupTitle = document.getElementById('popupTitle');
+    const popupMessage = document.getElementById('popupMessage');
+
+    function mostrarPopup(titulo, mensagem, sucesso = false) {
+      popupTitle.textContent = titulo;
+      popupMessage.textContent = mensagem;
+
+      // Cor do título muda se for sucesso ou erro
+      popupTitle.style.color = sucesso ? "#00a859" : "#c0392b";
+      popup.classList.add('show');
+    }
+
+    function fecharPopup() {
+      popup.classList.remove('show');
+    }
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const email = document.getElementById('usuario').value;
+      const novaSenha = document.getElementById('novaSenha').value;
+
+      let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+      const index = usuarios.findIndex(user => user.email === email);
+
+      if (index !== -1) {
+        usuarios[index].senha = novaSenha;
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+        mostrarPopup("✅ Sucesso!", "Senha alterada com sucesso! Redirecionando para o login...", true);
+
+        setTimeout(() => {
+          window.location.href = "login.html";
+        }, 2500);
+      } else {
+        mostrarPopup("❌ Erro", "E-mail não encontrado. Verifique e tente novamente.");
+      }
+    });
+  </script>
 </body>
 </html>
