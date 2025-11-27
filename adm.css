@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #111;
+    color: white;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    margin: 10px 0;
+    background: #222;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+    background: #ffbb00;
+    color: black;
+}
+
+.conteudo {
+    margin-left: 270px;
+    padding: 30px;
+}
+
+/* Telas */
+.tela {
+    display: none;
+}
+
+.ativa {
+    display: block;
+}
+
+/* Dashboard */
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 5px #0003;
+}
+
+.card h3 {
+    color: #ffbb00;
+}
+
+/* Produtos */
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* Formulário */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #ffbb00;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-voltar {
+    width: 100%;
+    padding: 12px;
+    margin-top: 30px;
+    background: #ffbb00;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background: #ffaa00;
+}
+

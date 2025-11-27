@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessórios - Loja Esportiva</title>
+    <link rel="stylesheet" href="acessorios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo Arena Store">
+            <h1>ARENA STORE</h1>
+        </div>
+
+        <nav>
+            <a href="Pagina_inicial.html">Início</a>
+            <a href="futebol.html">Futebol</a>
+            <a href="basquete.html">Basquete</a>
+            <a href="acessorios.html" class="active">Acessórios</a>
+            <a href="todosprodutos.html">Produtos</a>
+        </nav>
+
+        <div class="auth">
+            <a href="login.html">Login</a>
+            <a href="Pagina_inicial.html">Sobre</a>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <header class="banner">
+        <div class="banner-content">
+            <h1>🎽 Acessórios</h1>
+            <p>Bolsas • Meias • Luvas • Suporte Esportivo</p>
+            <button class="btn-loja" onclick="rolarParaProdutos()">Ver Produtos</button>
+        </div>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <section class="categorias">
+        <button onclick="filtrar('bolsas')">Bolsas</button>
+        <button onclick="filtrar('meias')">Meias</button>
+        <button onclick="filtrar('luvas')">Luvas</button>
+        <button onclick="filtrar('outros')">Outros</button>
+        <button onclick="filtrar('todos')" class="ativo">Todos</button>
+    </section>
+
+    <!-- Banners Secundários -->
+    <section class="banners-secundarios">
+        <div class="banner-item">
+            <img src="img/acessorios-1.jpg" alt="">
+        </div>
+        <div class="banner-item">
+            <img src="img/acessorios-2.jpg" alt="">
+        </div>
+        <div class="banner-item">
+            <img src="img/acessorios-3.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="produtos">
+
+        <!-- BOLSAS -->
+        <div class="produto bolsas">
+            <img src="imagens acessorios/bolsa1.png" alt="">
+            <h3>Bolsa Nike Gym</h3>
+            <p class="preco">R$ 149,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto bolsas">
+            <img src="imagens acessorios/bolsa2.png" alt="">
+            <h3>Bolsa Adidas Sports</h3>
+            <p class="preco">R$ 129,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- MEIAS -->
+        <div class="produto meias">
+            <img src="imagens acessorios/meia1.png" alt="">
+            <h3>Meias Nike Elite</h3>
+            <p class="preco">R$ 39,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto meias">
+            <img src="imagens acessorios/meia2.png" alt="">
+            <h3>Meias Adidas Cano Alto</h3>
+            <p class="preco">R$ 29,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- LUVAS -->
+        <div class="produto luvas">
+            <img src="imagens acessorios/luva1.png" alt="">
+            <h3>Luva Nike Pro Grip</h3>
+            <p class="preco">R$ 69,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto luvas">
+            <img src="imagens acessorios/luva2.png" alt="">
+            <h3>Luva Adidas Strong</h3>
+            <p class="preco">R$ 59,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- OUTROS -->
+        <div class="produto outros">
+            <img src="imagens acessorios/suporte1.png" alt="">
+            <h3>Suporte Toalha Esportivo</h3>
+            <p class="preco">R$ 24,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto outros">
+            <img src="imagens acessorios/garrafa1.png" alt="">
+            <h3>Garrafa Térmica Nike</h3>
+            <p class="preco">R$ 49,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+    </section>
+
+    <script src="acessorios.js"></script>
+
+</body>
+</html>

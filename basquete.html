@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basquete - Loja Esportiva</title>
+    <link rel="stylesheet" href="basquete.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo Arena Store">
+            <h1>ARENA STORE</h1>
+        </div>
+        <nav>
+            <a href="Pagina_inicial.html">Início</a>
+            <a href="futebol.html" class="active">Futebol</a>
+            <a href="basquete.html">Basquete</a>
+            
+            <a href="acessorios.html">Acessórios</a>
+            <a href="todosprodutos.html">Produtos</a>
+        </nav>
+        <div class="auth">
+            <a href="login.html">Login</a>
+            <a href="Pagina_inicial.html">Sobre</a>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <header class="banner">
+        <div class="banner-content">
+            <h1>🏀 Basquete</h1>
+            <p>Camisas • Acessórios • Tênis</p>
+            <button class="btn-loja" onclick="rolarParaProdutos()">Ver Produtos</button>
+        </div>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <section class="categorias">
+        <button onclick="filtrar('camisas')">Camisas</button>
+        <button onclick="filtrar('acessorios')">Acessórios</button>
+        <button onclick="filtrar('tenis')">Tênis</button>
+        <button onclick="filtrar('todos')" class="ativo">Todos</button>
+    </section>
+
+    <!-- Banners Secundários -->
+    <section class="banners-secundarios">
+        <div class="banner-item">
+            <img src="img/basquete-1.jpg" alt="">
+        </div>
+        <div class="banner-item">
+            <img src="img/basquete-2.jpg" alt="">
+        </div>
+        <div class="banner-item">
+            <img src="img/basquete-3.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="produtos">
+
+        <!-- CAMISAS -->
+        <div class="produto camisas">
+            <img src="imagens camisar/2.png" alt="Camisa NBA">
+            <h3>Camisa NBA Lakers</h3>
+            <p class="preco">R$ 199,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto camisas">
+            <img src="imagens camisar/2.png" alt="Camisa NBA">
+            <h3>Camisa NBA Lakers</h3>
+            <p class="preco">R$ 199,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto camisas">
+            <img src="imagens camisar/1.png" alt="">
+            <h3>Camisa NBA Bulls</h3>
+            <p class="preco">R$ 199,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto camisas">
+            <img src="imagens camisar/1.png" alt="">
+            <h3>Camisa NBA Bulls</h3>
+            <p class="preco">R$ 199,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- ACESSÓRIOS -->
+        <div class="produto acessorios">
+            <img src="imagens acessorios/10 (1).png" alt="">
+            <h3>Bola Oficial NBA</h3>
+            <p class="preco">R$ 149,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto acessorios">
+            <img src="imagens acessorios/10 (1).png" alt="">
+            <h3>Bola Oficial NBA</h3>
+            <p class="preco">R$ 149,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto acessorios">
+            <img src="imagens acessorios/10 (1).png" alt="">
+            <h3>Bola Oficial NBA</h3>
+            <p class="preco">R$ 149,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto acessorios">
+            <img src="imagens acessorios/10 (1).png" alt="">
+            <h3>Bola Oficial NBA</h3>
+            <p class="preco">R$ 149,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto acessorios">
+            <img src="imagens acessorios/10 (1).png" alt="">
+            <h3>Bola Oficial NBA</h3>
+            <p class="preco">R$ 149,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto acessorios">
+            <img src="imagens acessorios/10 (1).png" alt="">
+            <h3>Bola Oficial NBA</h3>
+            <p class="preco">R$ 149,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto acessorios">
+            <img src="imagens acessorios/10 (1).png" alt="">
+            <h3>Bola Oficial NBA</h3>
+            <p class="preco">R$ 149,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto acessorios">
+            <img src="imagens acessorios/10 (1).png" alt="">
+            <h3>Bola Oficial NBA</h3>
+            <p class="preco">R$ 149,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto acessorios">
+            <img src="imagens acessorios/6.png" alt="">
+            <h3>Munhequeira Nike</h3>
+            <p class="preco">R$ 39,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto acessorios">
+            <img src="imagens acessorios/6.png" alt="">
+            <h3>Munhequeira Nike</h3>
+            <p class="preco">R$ 39,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto tenis">
+            <img src="imagens acessorios/8.png" alt="">
+            <h3>Tênis Nike Giannis</h3>
+            <p class="preco">R$ 599,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto tenis">
+            <img src="imagens acessorios/8.png" alt="">
+            <h3>Tênis Nike Giannis</h3>
+            <p class="preco">R$ 599,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto tenis">
+            <img src="imagens acessorios/8.png" alt="">
+            <h3>Tênis Nike Giannis</h3>
+            <p class="preco">R$ 599,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto tenis">
+            <img src="imagens acessorios/8.png" alt="">
+            <h3>Tênis Nike Giannis</h3>
+            <p class="preco">R$ 599,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto tenis">
+            <img src="imagens acessorios/8.png" alt="">
+            <h3>Tênis Nike Giannis</h3>
+            <p class="preco">R$ 599,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto tenis">
+            <img src="imagens acessorios/8.png" alt="">
+            <h3>Tênis Nike Giannis</h3>
+            <p class="preco">R$ 599,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- TÊNIS -->
+        <div class="produto tenis">
+            <img src="imagens tenisBasquete/JA 2 MASCULINO" alt="">
+            <h3>Tênis Nike Giannis</h3>
+            <p class="preco">R$ 599,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto tenis">
+            <img src="imagens acessorios/8.png" alt="">
+            <h3>Tênis Nike Giannis</h3>
+            <p class="preco">R$ 599,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto tenis">
+            <img src="imagens acessorios/8.png" alt="">
+            <h3>Tênis Nike Giannis</h3>
+            <p class="preco">R$ 599,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto tenis">
+            <img src="imagens acessorios/8.png" alt="">
+            <h3>Tênis Nike Giannis</h3>
+            <p class="preco">R$ 599,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto tenis">
+            <img src="imagens acessorios/8.png" alt="">
+            <h3>Tênis Nike Giannis</h3>
+            <p class="preco">R$ 599,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto tenis">
+            <img src="imagens acessorios/7.png" alt="">
+            <h3>Tênis Curry Flow</h3>
+            <p class="preco">R$ 699,90</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+    </section>
+
+    <script src="basquete.js"></script>
+</body>
+
+</html>

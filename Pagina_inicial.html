@@ -1,190 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arena Store - Página Inicial</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arena Store - Página Inicial</title>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
+
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
+  <!-- Cabeçalho -->
+  <header>
     <div class="logo">
-        <img src="logo.png" alt="Arena Store Logo">
-        <h1 class="site-title">ARENA STORE</h1>
+      <img src="logo.png" alt="Arena Store Logo">
+      <h1 class="site-title">ARENA STORE</h1>
     </div>
-
     <nav>
-        <ul>
-            <li><a href="futebol.html">Futebol</a></li>
-            <li><a href="basquete.html">Basquete</a></li>
-            <li><a href="volei.html">Vôlei</a></li>
-            <li><a href="acessorios.html">Acessórios</a></li>
-            <li><a href="todosprodutos.html">Produtos</a></li>
-        </ul>
+      <ul>
+        <li><a href="futebol.html">Futebol</a></li>
+        <li><a href="basquete.html">Basquete</a></li>
+        
+        <li><a href="acessorios.html">Acessórios</a></li>
+        <li><a href="todosprodutos.html">Produtos</a></li>
+      </ul>
     </nav>
 
     <div class="header-right">
-        <a href="login.html">Login</a>
-        <a href="">Sobre</a>
+      <span id="nome-usuario"></span>
+      <a href="cadastro.html">Cadastre-se</a>
+      <a href="login.html">Login</a>
+      <a href="">Sobre</a>
     </div>
-</header>
+  </header>
 
 
-    <!-- Banner Principal -->
-    <section class="banner">
-        <div class="banner-content">
-            <h1>Bem-Vindo(a) ao Mundo Esportivo</h1>
-            <a href="todosprodutos.html" class="botao">Explorar Coleção</a>
+
+  <!-- Banner Principal -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Bem-Vindo(a) ao Mundo Esportivo</h1>
+      <a href="todosprodutos.html" class="botao">Explorar Coleção</a>
+    </div>
+  </section>
+
+
+  <!-- Produtos Mais Vendidos -->
+  <section id="colecao" class="produtos">
+    <h2>As Mais Vendidas!</h2>
+    <div class="carrossel">
+      <div class="linha-produtos">
+        <div class="card">
+          <img src="imagens acessorios/10 (1).png" alt="Produto 1">
+          <p>R$215,00</p>
+          <small>3x de R$85,00 sem juros</small>
+          <button>Comprar</button>
         </div>
-    </section>
-
-
-<!-- Produtos Mais Vendidos -->
-<section id="colecao" class="produtos">
-  <h2>As Mais Vendidas!</h2>
-  <div class="carrossel">
-    <div class="linha-produtos">
-      <div class="card">
-        <img src="imagens acessorios/10 (1).png" alt="Produto 1">
-        <p>R$215,00</p>
-        <small>3x de R$85,00 sem juros</small>
-        <button>Comprar</button>
-      </div>
-      <div class="card">
-        <img src="imagens camisar/brasil (1).png" alt="Produto 2">
-        <p>R$252,00</p>
-        <small>3x de R$85,00 sem juros</small>
-        <button>Comprar</button>
-      </div>
-      <div class="card">
-        <img src="imagens chuteiras/3 (1).png" alt="Produto 3">
-        <p>R$252,00</p>
-        <small>3x de R$85,00 sem juros</small>
-        <button>Comprar</button>
-      </div>
-      <div class="card">
-        <img src="imagens camisar/5.png" alt="Produto 4">
-        <p>R$189,00</p>
-        <small>3x de R$63,00 sem juros</small>
-        <button>Comprar</button>
-      </div>
-      <div class="card">
-        <img src="imagens chuteiras/6.png" alt="Produto 5">
-        <p>R$310,00</p>
-        <small>5x de R$62,00 sem juros</small>
-        <button>Comprar</button>
-      </div>
-      <div class="card">
-        <img src="imagens camisar/7.png" alt="Produto 6">
-        <p>R$279,00</p>
-        <small>4x de R$69,75 sem juros</small>
-        <button>Comprar</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Lançamentos -->
-<section class="lancamentos">
-  <h2>Lançamentos</h2>
-  <div class="carrossel">
-    <div class="linha-produtos">
-      <div class="card">
-        <img src="imagens camisar/4.png" alt="Produto 7">
-        <p>R$210,00</p>
-        <small>3x de R$70,00 sem juros</small>
-        <button>Comprar</button>
-      </div>
-      <div class="card">
-        <img src="imagens camisar/3.png" alt="Produto 8">
-        <p>R$239,00</p>
-        <small>3x de R$79,67 sem juros</small>
-        <button>Comprar</button>
-      </div>
-      <div class="card">
-        <img src="imagens camisar/1.png" alt="Produto 9">
-        <p>R$260,00</p>
-        <small>4x de R$65,00 sem juros</small>
-        <button>Comprar</button>
-      </div>
-      <div class="card">
-        <img src="imagens chuteiras/2.png" alt="Produto 10">
-        <p>R$329,00</p>
-        <small>5x de R$65,80 sem juros</small>
-        <button>Comprar</button>
-      </div>
-      <div class="card">
-        <img src="imagens chuteiras/8.png" alt="Produto 11">
-        <p>R$340,00</p>
-        <small>5x de R$68,00 sem juros</small>
-        <button>Comprar</button>
+        <div class="card">
+          <img src="imagens camisar/brasil (1).png" alt="Produto 2">
+          <p>R$252,00</p>
+          <small>3x de R$85,00 sem juros</small>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img src="imagens chuteiras/3 (1).png" alt="Produto 3">
+          <p>R$252,00</p>
+          <small>3x de R$85,00 sem juros</small>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img src="imagens camisar/5.png" alt="Produto 4">
+          <p>R$189,00</p>
+          <small>3x de R$63,00 sem juros</small>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img src="imagens camisar/5.png" alt="Produto 5">
+          <p>R$189,00</p>
+          <small>3x de R$63,00 sem juros</small>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img src="imagens camisar/5.png" alt="Produto 6">
+          <p>R$279,00</p>
+          <small>4x de R$69,75 sem juros</small>
+          <button>Comprar</button>
+        </div>
       </div>
     </div>
-  </div>
-  <a href="todos_produtos.html" class="botao">Ver Todos os Produtos</a>
-</section>
-
-    <!-- Banner do Flamengo -->
-    <section class="banner-flamengo">
-        <div class="texto-banner">
-            <h2>O MANTO VIROU PATRIMÔNIO</h2>
-            <p>Chegou a nova camisa 3 do Flamengo. A história da Nação estampada no peito.</p>
-            <a href="" class="botao-branco">Garanta o seu</a>
-        </div>
-    </section>
-
-    
-    <!-- Sobre a Arena Store -->
-    <section class="sobre">
-        <div class="texto-sobre">
-            <h2><span class="destaque">Arena Store</span></h2>
-            <p>É um e-commerce multiesportivo especializado na comercialização de uma vasta gama de produtos oficiais de diversas modalidades. Nosso foco principal reside em atender à demanda de fãs e praticantes de esportes, oferecendo itens autênticos e de alta qualidade.</p>
-            <p>Ao se posicionar como uma multiesportiva, a Arena Store atende a um público diversificado, desde o torcedor fanático que quer a nova camisa do time até o atleta amador em busca de equipamentos específicos para seu treino.</p>
-        </div>
-        <div class="imagem-sobre">
-            <img src="logo.png" alt="Arena Store">
-        </div>
-    </section>
-<!-- Benefícios -->
-    <section class="beneficios">
-        <div class="beneficio">
-            <h3>🚚 Frete Grátis</h3>
-            <p>para toda Capital</p>
-        </div>
-        <div class="beneficio">
-            <h3>🏷️ Cupom</h3>
-            <p>Use “ARENA10” e ganhe 10% de desconto</p>
-        </div>
-        <div class="beneficio">
-            <h3>💬 Atendimento</h3>
-            <p>Em caso de dúvidas, entre em contato via Instagram</p>
-        </div>
-        <div class="beneficio">
-            <h3>🔁 Trocas e Devoluções</h3>
-            <p>Trocas e devoluções entre em contato via e-mail</p>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="footer-content">
-            <div class="logo-footer">
-                <img src="logo.png" alt="Arena Store">
-            </div>
-            <form class="newsletter">
-                <input type="text" placeholder="Nome Completo">
-                <input type="email" placeholder="E-mail">
-            </form>
-            <p class="inicio"><a href="Pagina_inicial.html">Início</a></p>
-        </div>
-    </footer>
+  </section>
 
 
-<script src="js/pagina_inicial.js"></script>
+  <!-- Lançamentos -->
+  <section class="lancamentos">
+    <h2>Lançamentos</h2>
+    <div class="carrossel">
+      <div class="linha-produtos">
+        <div class="card">
+          <img src="imagens camisar/4.png" alt="Produto 7">
+          <p>R$210,00</p>
+          <small>3x de R$70,00 sem juros</small>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img src="imagens camisar/3.png" alt="Produto 8">
+          <p>R$239,00</p>
+          <small>3x de R$79,67 sem juros</small>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img src="imagens camisar/1.png" alt="Produto 9">
+          <p>R$260,00</p>
+          <small>4x de R$65,00 sem juros</small>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img src="imagens camisar/5.png" alt="Produto 10">
+          <p>R$329,00</p>
+          <small>5x de R$65,80 sem juros</small>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img src="imagens camisar/5.png" alt="Produto 11">
+          <p>R$340,00</p>
+          <small>5x de R$68,00 sem juros</small>
+          <button>Comprar</button>
+        </div>
+      </div>
+    </div>
+    <a href="todosprodutos.html" class="botao">Ver Todos os Produtos</a>
+  </section>
+
+  <!-- Banner do Flamengo -->
+  <section class="banner-flamengo">
+    <div class="texto-banner">
+      <h2>O MANTO VIROU PATRIMÔNIO</h2>
+      <p>Chegou a nova camisa 3 do Flamengo. A história da Nação estampada no peito.</p>
+      <a href="" class="botao-branco">Garanta o seu</a>
+    </div>
+  </section>
+
+
+  <!-- Sobre a Arena Store -->
+  <section class="sobre">
+    <div class="texto-sobre">
+      <h2><span class="destaque">Arena Store</span></h2>
+      <p>É um e-commerce multiesportivo especializado na comercialização de uma vasta gama de produtos oficiais de
+        diversas modalidades. Nosso foco principal reside em atender à demanda de fãs e praticantes de esportes,
+        oferecendo itens autênticos e de alta qualidade.</p>
+      <p>Ao se posicionar como uma multiesportiva, a Arena Store atende a um público diversificado, desde o torcedor
+        fanático que quer a nova camisa do time até o atleta amador em busca de equipamentos específicos para seu
+        treino.</p>
+    </div>
+    <div class="imagem-sobre">
+      <img src="logo.png" alt="Arena Store">
+    </div>
+  </section>
+  <!-- Benefícios -->
+  <section class="beneficios">
+    <div class="beneficio">
+      <h3>🚚 Frete Grátis</h3>
+      <p>para toda Capital</p>
+    </div>
+    <div class="beneficio">
+      <h3>🏷️ Cupom</h3>
+      <p>Use “ARENA10” e ganhe 10% de desconto</p>
+    </div>
+    <div class="beneficio">
+      <h3>💬 Atendimento</h3>
+      <p>Em caso de dúvidas, entre em contato via Instagram</p>
+    </div>
+    <div class="beneficio">
+      <h3>🔁 Trocas e Devoluções</h3>
+      <p>Trocas e devoluções entre em contato via e-mail</p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo-footer">
+        <img src="logo.png" alt="Arena Store">
+      </div>
+      <form class="newsletter">
+        <input type="text" placeholder="Nome Completo">
+        <input type="email" placeholder="E-mail">
+      </form>
+      <p class="inicio"><a href="Pagina_inicial.html">Início</a></p>
+    </div>
+  </footer>
+
+
+  <script src="pagina_inicial.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
+      const headerRight = document.querySelector(".header-right");
+
+      if (usuario) {
+        headerRight.innerHTML = `
+        <span>Olá, <strong>${usuario.nome.split(' ')[0]}</strong>!</span>
+        <button id="logout">Sair</button>
+      `;
+        document.getElementById("logout").addEventListener("click", () => {
+          localStorage.removeItem("usuarioLogado");
+          window.location.href = "login.html";
+        });
+      }
+    });
+  </script>
+
+  <script src="usuario.js"></script>
 
 
 </body>
+
 </html>

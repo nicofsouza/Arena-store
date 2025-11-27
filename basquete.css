@@ -1,8 +1,4 @@
-/* =========================================
-   Arena Store - Página Futebol
-   ========================================= */
 
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +45,6 @@
     text-decoration: none;
     font-weight: 500;
 }
-
 /* Banner */
 /* ======= BANNER PRINCIPAL (ATUALIZADO) ======= */
 /* ===== Banner Futebol ===== */
@@ -108,6 +103,10 @@
   background-color: #e55c00;
   transform: scale(1.05);
 }
+
+
+
+
 /* Categorias */
 .categorias {
     display: flex;
@@ -175,10 +174,8 @@
 
 .produto img {
     width: 100%;
-    height: auto;
-    display: block;
+    transition: 0.3s;
 }
-
 
 .produto img:hover {
     transform: scale(1.08);
@@ -188,7 +185,7 @@
     margin-top: 8px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #ff6600;
+    color: #ff0000;
 }
 
 .btn-comprar {
@@ -218,5 +215,3 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
-

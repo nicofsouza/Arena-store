@@ -1,69 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arena Store - Login</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arena Store - Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Arena Store Logo">
-            <span>ARENA STORE</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="Pagina_inicial.html">Home</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Arena Store Logo">
+      <span>ARENA STORE</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Pagina_inicial.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="login-container">
-        <div class="login-box">
-            <img src="logo.png" alt="Arena Store Logo" class="login-logo">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <input type="text" id="usuario" placeholder="E-mail" required>
-                <input type="password" id="senha" placeholder="Senha" required>
-                <button type="submit">Entrar</button>
-            </form>
-            <div class="links">
-                <a href="cadastro.html">Criar conta</a> · 
-                <a href="trocar_senha.html">Esqueceu a Senha?</a>
-            </div>
-        </div>
-    </main>
+  <main class="login-container">
+    <div class="login-box">
+      <img src="logo.png" alt="Arena Store Logo" class="login-logo">
+      <h2>Login</h2>
 
-    <!-- SCRIPT -->
-    <script>
-      const form = document.getElementById('loginForm');
+      <form id="loginForm">
+        <input type="text" id="email" placeholder="E-mail" required>
+        <input type="password" id="senha" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+      </form>
 
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
+      <p id="mensagem" style="margin-top: 10px;"></p>
 
-        const email = document.getElementById('usuario').value;
-        const senha = document.getElementById('senha').value;
+      <div class="links">
+        <a href="cadastro.html">Criar conta</a> ·
+        <a href="trocar_senha.html">Esqueceu a Senha?</a>
+      </div>
+    </div>
+  </main>
 
-        const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+  <script>
+    const form = document.getElementById('loginForm');
+    const msg = document.getElementById('mensagem');
 
-        // Verifica se existe um usuário com o mesmo email e senha
-        const usuarioEncontrado = usuarios.find(
-          (user) => user.email === email && user.senha === senha
-        );
+    // 🔐 Dados do admin fixo (você pode alterar depois)
+    const ADMIN_EMAIL = "admin@admin.com";
+    const ADMIN_SENHA = "123456";
 
-        if (usuarioEncontrado) {
-          alert(`Bem-vindo(a), ${usuarioEncontrado.nome}!`);
-          // Aqui você pode redirecionar, se quiser:
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const email = document.getElementById('email').value.trim();
+      const senha = document.getElementById('senha').value.trim();
+
+      const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+      // ===============================
+      // 🔥 LOGIN ADMINISTRADOR
+      // ===============================
+      if (email === ADMIN_EMAIL && senha === ADMIN_SENHA) {
+
+        localStorage.setItem("adminLogado", "true");
+
+        msg.style.color = "green";
+        msg.textContent = "Bem-vindo, administrador!";
+
+        setTimeout(() => {
+          window.location.href = "adm.html";
+        }, 800);
+
+        return;
+      }
+
+      // ===============================
+      // 🔥 LOGIN DE USUÁRIO COMUM
+      // ===============================
+      const usuarioEncontrado = usuarios.find(
+        (user) => user.email === email && user.senha === senha
+      );
+
+      if (usuarioEncontrado) {
+
+        msg.style.color = "green";
+        msg.textContent = `Bem-vindo(a), ${usuarioEncontrado.nome}!`;
+
+        localStorage.setItem("usuarioLogado", JSON.stringify(usuarioEncontrado));
+
+        setTimeout(() => {
           window.location.href = "Pagina_inicial.html";
-        } else {
-          alert("E-mail ou senha incorretos. Tente novamente!");
-        }
-      });
-    </script>
-    <p id="mensagem"></p>
-<script src="login.js"></script>
+        }, 800);
+
+        return;
+      }
+
+      // ===============================
+      // ❌ ERRO NO LOGIN
+      // ===============================
+      msg.style.color = "red";
+      msg.textContent = "E-mail ou senha incorretos!";
+    });
+  </script>
 
 </body>
+
 </html>

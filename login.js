@@ -10,8 +10,9 @@ const mensagem = document.getElementById('mensagem');
 
 // Simulação de usuário cadastrado (pode ser substituído depois por backend)
 const usuarioFake = {
-  email: 'teste@exemplo.com',
-  senha: '123456'
+  nome: "João da Silva",
+  email: "teste@exemplo.com",
+  senha: "123456"
 };
 
 // Evento de envio do formulário
@@ -26,12 +27,20 @@ form.addEventListener('submit', function (e) {
 
   // Verifica login
   if (email.value === usuarioFake.email && senha.value === usuarioFake.senha) {
+
+    // Salvar usuário no localStorage
+    localStorage.setItem("usuarioLogado", JSON.stringify({
+      nome: usuarioFake.nome,
+      email: usuarioFake.email
+    }));
+
     exibirMensagem('Login realizado com sucesso! ✅', 'sucesso');
 
     // redirecionar (exemplo)
     setTimeout(() => {
       window.location.href = 'pagina_inicial.html';
     }, 1000);
+
   } else {
     exibirMensagem('E-mail ou senha incorretos!', 'erro');
   }
@@ -42,3 +51,4 @@ function exibirMensagem(texto, tipo) {
   mensagem.textContent = texto;
   mensagem.className = tipo; // muda a classe (sucesso ou erro)
 }
+

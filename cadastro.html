@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arena Store - Cadastro</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- CABEÇALHO -->
   <header>
@@ -24,7 +26,9 @@
   <main class="cadastro-container">
     <div class="form-box">
       <h2>Cadastro</h2>
-      <form>
+
+      <form id="form-cadastro">
+
         <label for="nome">Nome Completo</label>
         <input type="text" id="nome" placeholder="Ex: Bárbara Silva" required>
 
@@ -37,6 +41,7 @@
         <label for="senha">Senha</label>
         <input type="password" id="senha" placeholder="Digite sua senha" required>
 
+
         <div class="input-row">
           <div>
             <label for="cep">CEP</label>
@@ -44,29 +49,31 @@
           </div>
           <div>
             <label for="logradouro">Logradouro</label>
-            <input type="text" id="logradouro" placeholder="Rua Exemplo" required>
+            <input type="text" id="logradouro" placeholder="Rua" readonly>
           </div>
         </div>
 
         <div class="input-row">
           <div>
             <label for="bairro">Bairro</label>
-            <input type="text" id="bairro" placeholder="Centro" required>
+            <input type="text" id="bairro" placeholder="Bairro" readonly>
           </div>
           <div>
             <label for="cidade">Cidade</label>
-            <input type="text" id="cidade" placeholder="São Paulo" required>
+            <input type="text" id="cidade" placeholder="Cidade" readonly>
           </div>
         </div>
 
         <label for="estado">Estado</label>
-        <input type="text" id="estado" placeholder="SP" required>
+        <input type="text" id="estado" placeholder="Estado" readonly>
+
+         <div id="mensagem"></div>
 
         <button type="submit">Cadastrar</button>
       </form>
     </div>
   </main>
-  <script src="cadastro.js"></script>
 
+  <script src="cadastro.js"></script>
 </body>
 </html>
