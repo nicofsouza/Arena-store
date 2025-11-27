@@ -1,4 +1,4 @@
-# 🛒 Arena Store — E-commerce Responsivo com Carrinho Completo
+# 🛒 Arena Store 
 
 Bem-vindo ao repositório da **Arena Store**, um projeto desenvolvido em **HTML, CSS e JavaScript puros**, focado em simplicidade, desempenho e experiência do usuário.
 
@@ -54,3 +54,4 @@ O sistema conta com **login**, **carrinho dinâmico**, **cálculo de frete via C
 <p align="center">
   Desenvolvido com ⚡ por [Nicolas Souza]
 </p>
+
