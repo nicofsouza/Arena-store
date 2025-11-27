@@ -1,83 +1,56 @@
-🧡 Elemento Power - Loja de Suplementação
+# 🛒 Arena Store — E-commerce Responsivo com Carrinho Completo
 
-Elemento Power é um projeto de site e-commerce voltado para a venda de suplementos esportivos.
-As cores e o design transmitem força, energia e confiança, com uma paleta em laranja e preto — simbolizando energia e base sólida.
+Bem-vindo ao repositório da **Arena Store**, um projeto desenvolvido em **HTML, CSS e JavaScript puros**, focado em simplicidade, desempenho e experiência do usuário.
 
-🖥️ Estrutura do Projeto
-📁 elemento-power/
-│
-├── 📄 index.html              # Página inicial
-├── 📄 pagina_inicial.html     # Estrutura principal do site
-├── 📄 style.css               # Estilos da página
-├── 📄 produtos.html           # Página de listagem de produtos
-├── 📄 login.html              # Tela de login de usuários
-├── 📄 cadastro.html           # Tela de cadastro de novos clientes
-├── 📁 img/                    # Imagens usadas no site (banners, produtos, ícones)
-│    ├── logo.png
-│    ├── suplementos.png
-│    └── ...
-└── 📄 README.md            
+O sistema conta com **login**, **carrinho dinâmico**, **cálculo de frete via CEP**, **responsividade** e páginas dedicadas para listagem de produtos, detalhes e checkout.
 
-🚀 Funcionalidades
+## 📦 Funcionalidades Principais
 
-✅ Página inicial com banner e chamadas para ação
-✅ Seções de produtos em destaque
-✅ Sistema de login e cadastro de usuários
-✅ Layout responsivo e moderno
-✅ Estrutura pronta para integração com backend (PHP, Node.js, etc.)
-✅ Área administrativa planejada (login admin + dashboard para gerenciar produtos)
+### ✔️ Autenticação
+* Login e cadastro usando `LocalStorage`.
+* Exibição do nome do usuário no topo.
+* Botão de logout dinâmico.
 
-)
+### 🛒 Carrinho 100% Funcional
+* Adicionar produtos ao carrinho.
+* Aumentar / diminuir quantidade.
+* **Cálculo automático de totais.**
+* Remover produto.
+* Badge com contador no ícone do carrinho.
+* Carrinho salvo no `LocalStorage` (não perde dados ao atualizar).
+* Redirecionamento automático para `carrinho.html` ao clicar em “Comprar”.
 
-🎨 Paleta de Cores
+### 🚚 Cálculo de Frete via CEP
+* Integração com **API ViaCEP**.
+* Exibe o endereço completo.
+* Calcula o valor do frete simulado por região.
+* Atualiza o total geral automaticamente.
 
-| Elemento         | Cor       | Significado               |
-| ---------------- | --------- | ------------------------- |
-| Fundo principal  | `#000000` | Base, estabilidade        |
-| Cor de destaque  | `#FF6600` | Energia, ação e movimento |
-| Botões e títulos | `#FF4500` | Chamada para ação         |
-| Texto e detalhes | `#FFFFFF` | Clareza e contraste       |
+### 📱 Layout 100% Responsivo
+* Desenvolvido com **Flexbox** e **Grid Layout**.
+* Compatível com celulares, tablets e desktops.
+* Interface moderna, limpa e intuitiva.
 
+### 💳 Opções de Pagamento
+* PIX
+* Cartão de crédito
+* Cartão de débito
+* *(Simulação de interface para estudo — sem processamento real)*
 
-📱 Layout
+---
 
-O site é composto pelas seguintes seções:
+## 🧩 Tecnologias Utilizadas
 
-Cabeçalho (Header) – com logo e menu de navegação
+| Tecnologia | Uso |
+| :--- | :--- |
+| **HTML5** | Estrutura semântica das páginas |
+| **CSS3** | Layout, responsividade, variáveis e animações |
+| **JavaScript** | Lógica do carrinho, cálculos, API e login |
+| **LocalStorage** | Persistência de dados (login e carrinho) |
+| **API ViaCEP** | Consulta automática de endereço pelo CEP |
 
-Banner principal – imagem chamativa com texto motivacional
+---
 
-Sessão de Produtos – cards organizados com imagem, nome e botão "Comprar"
-
-Rodapé (Footer) – informações de contato, redes sociais e direitos autorais
-
-🧩 Tecnologias Utilizadas
-
-HTML5
-
-CSS3 (Flexbox e Grid)
-
-JavaScript (interações básicas)
-
-(O projeto pode futuramente receber integração com frameworks como React, ou backend com Node.js/PHP.)
-
-
-Como Executar o Projeto
-
-1° Baixe ou clone este repositório:
-
-git clone https://github.com/seuusuario/elemento-power.git
-
-
-2°Abra o projeto no seu editor preferido (VS Code recomendado).
-
-3°Abra o arquivo pagina_inicial.html no navegador.
-
-4°Caso queira hospedar, use GitHub Pages 
-
-
-🧑‍💻 Desenvolvido por
-
-Nicolas Ferreira Souza
-💼 Projeto acadêmico e de portfólio
-📅 2025
+<p align="center">
+  Desenvolvido com ⚡ por [Nicolas Souza]
+</p>
