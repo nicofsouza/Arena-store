@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arena Store — Carrinho</title>
+  <link rel="stylesheet" href="carrinho.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Arena Store Logo">
+      <h1 class="site-title">ARENA STORE</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="Pagina_inicial.html">Início</a></li>
+        <li><a href="futebol.html">Futebol</a></li>
+        <li><a href="basquete.html">Basquete</a></li>
+        <li><a href="acessorios.html">Acessórios</a></li>
+        <li><a href="todosprodutos.html">Produtos</a></li>
+      </ul>
+    </nav>
+<div class="auth">
+            <a id="nome-usuario"></a>
+            
+        </div>
+    <div class="header-right">
+      <span id="nome-usuario-header"></span>
+      <a href="Pagina_inicial.html">Continuar comprando</a>
+      <a href="login.html">Login</a>
+      <a id="botao-carrinho-header" href="carrinho.html" class="carrinho-link">🛒 <span id="badge-carrinho-header" class="badge">0</span></a>
+    </div>
+
+    <div id="produto-carrinho" style="margin-top: 20px;"></div>
+
+  </header>
+
+  <main class="container">
+    <h2>Seu Carrinho</h2>
+
+    <section id="itens-carrinho" class="itens-carrinho">
+      <!-- itens serão injetados pelo JS -->
+    </section>
+
+    <aside class="resumo">
+      <h3>Resumo do pedido</h3>
+      <div class="resumo-row">
+        <span>Subtotal</span><span id="subtotal">R$ 0,00</span>
+      </div>
+
+      <div class="cep-box">
+        <label for="cep-cart">Calcular frete por CEP</label>
+        <input id="cep-cart" placeholder="00000-000" />
+        <button id="calcular-frete">Calcular Frete</button>
+        <p id="frete-info" class="info"></p>
+      </div>
+
+      <div class="resumo-row">
+        <span>Frete</span><span id="valor-frete">R$ 0,00</span>
+      </div>
+
+      <div class="resumo-row total">
+        <strong>Total</strong><strong id="total-geral">R$ 0,00</strong>
+      </div>
+
+      <h4>Forma de pagamento</h4>
+      <div class="pagamento">
+        <label><input type="radio" name="pag" value="pix" checked> PIX</label>
+        <label><input type="radio" name="pag" value="credito"> Crédito</label>
+        <label><input type="radio" name="pag" value="debito"> Débito</label>
+      </div>
+
+      <div id="pagamento-detalhes">
+        <!-- campos do cartão aparecem dinamicamente -->
+      </div>
+
+      <button id="finalizar" class="btn-finalizar">Finalizar Compra</button>
+      <button id="continuar" class="btn-continuar" onclick="window.location.href='Pagina_inicial.html'">Continuar comprando</button>
+    </aside>
+  </main>
+
+  <template id="template-item">
+    <div class="item">
+      <img class="item-img" src="" alt="">
+      <div class="item-info">
+        <h4 class="item-nome"></h4>
+        <p class="item-preco"></p>
+        <div class="quantidade">
+          <button class="q-decrease">-</button>
+          <input class="q-input" type="number" min="1" value="1">
+          <button class="q-increase">+</button>
+        </div>
+        <button class="remover">Remover</button>
+      </div>
+      <div class="item-total">R$ 0,00</div>
+    </div>
+  </template>
+
+  <script src="carrinho.js"></script>
+</body>
+</html>

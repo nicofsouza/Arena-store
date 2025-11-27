@@ -29,7 +29,8 @@ body {
 }
 
 .banner {
-    background: url('img/banner-acessorios.jpg') center/cover no-repeat;
+  background: url('imagens\ acessorios/ACESSESORIOS.png') center/cover no-repeat;
+
     height: 350px;
     display: flex;
     align-items: center;
@@ -119,4 +120,134 @@ body {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+/* BENEFÍCIOS */
+.beneficios {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  background: #f8f8f8;
+  flex-wrap: wrap;
+}
+
+.beneficio {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+  text-align: center;
+}
+
+.beneficio h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.beneficio p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* FOOTER */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 50px 20px 20px;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 240px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.footer-col h4 {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin: 6px 0;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+/* NEWSLETTER */
+.newsletter input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.newsletter button {
+  width: 100%;
+  padding: 10px;
+  background: #ff0000;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter button:hover {
+  background: #cc0000;
+}
+
+/* COPYRIGHT */
+.copy {
+  text-align: center;
+  margin-top: 40px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 780px) {
+  .beneficios {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-col ul {
+    text-align: center;
+  }
 }
